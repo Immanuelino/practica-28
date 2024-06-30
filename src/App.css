@@ -1,21 +1,13 @@
+/* App.css */
 .App {
   text-align: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: black;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +16,49 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App-logo {
+  height: 20vmin; /* Tamaño de la imagen */
+  pointer-events: none;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.SearchBox {
+  margin-bottom: 20px;
+  height:80px;
+}
+
+/* App.css (o tu archivo de estilos principal) */
+.SearchInput {
+  width: 400px; /* Ajustar el ancho según sea necesario */
+  height: 20px; /* Ajustar la altura según sea necesario */
+  padding: 8px; /* Ajustar el padding interno del campo */
+  font-size: 14px; /* Ajustar el tamaño de fuente */
+  border: 1px solid #ccc; /* Añadir borde para mejorar la apariencia */
+  border-radius: 4px; /* Añadir bordes redondeados */
+}
+
+.SearchInput:focus {
+  outline: none; /* Quitar el borde de enfoque predeterminado */
+  border-color: #007bff; /* Cambiar el color del borde al enfocar */
+}
+
+.FilteredList {
+  width: 20%;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.FilteredList ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.FilteredList li {
+  background-color: #f0f0f0;
+  margin: 5px 0;
+  padding: 10px;
 }
